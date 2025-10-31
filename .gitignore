@@ -1,0 +1,73 @@
+# =========================================
+# 🦉 SleepingOwl-Homophone .gitignore
+# =========================================
+
+# ---- Python 編譯與快取 ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# ---- 環境與設定 ----
+venv/
+.env
+.DS_Store
+.idea/
+.vscode/
+
+# ---- 模型與快取 ----
+# Hugging Face / SentenceTransformer 模型
+model/
+!model/README.md
+
+# ---- 資料與輸出 ----
+.private/
+data_split/
+cache/
+output/
+output_matrices/
+*.npy
+*.npz
+*.json
+*.sqlite
+*.db
+*.bak
+*.tmp
+data\tsi.csv
+
+# ---- Notebook / 測試暫存 ----
+*.ipynb_checkpoints
+*.csv~
+*.txt~
+*.swp
+*.bak
+
+# ---- 系統自動檔 ----
+Thumbs.db
+desktop.ini
+
+# ---- 臨時壓縮檔 ----
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# 忽略 data 資料夾內的所有資料檔，但保留結構
+data/*
+!data/.gitkeep
+!data/README.md
+
+# ---- Windows 執行檔（若有打包）----
+*.exe
+*.dll
+*.spec
+
+# =========================================
+# 保留關鍵結構
+# =========================================
+!so_*.py
+!example_reorder.py
+!README.md
+!LICENSE*
